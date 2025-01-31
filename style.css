@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body_container{
+    height: 7000px;
+}
+.container{
+    margin: auto;
+    font-family: "Inter", serif;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 10px 10px;
+    gap: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+.left_nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.right_nav a{
+    text-decoration: none;
+    color: rgba(25, 25, 25, 0.968);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.myntra_logo{
+    border-radius: 60%;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    padding-left: 50px;
+}
+.left_nav{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.right_nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.right_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input_nav{
+    width: 34vw;
+    height: 2rem;
+    padding: 7px 17px;
+    border: 0.5px solid rgba(128, 128, 128, 0.218);
+    background: #f7f8fd;
+    border-radius: 5px;
+    font-family: "Inter", serif;
+}
+.category{
+    padding-right: 40px;
+}
+.coupon{
+    width: 92vw;
+    margin: auto;
+    padding: 20px 0;
+}
+.slider_container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.img_slider{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    display: none;
+}
+.img_slider .active{
+    display: block;
+}
+.dots_container{
+    position: relative;
+}
+.dot{
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin:17px 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+}
+.dot:hover{
+    background-color: rgb(99, 110, 116);
+}
+.dots_container .activeDot{
+    background-color: rgb(82, 87, 91);
+}
+
+
+.heading{
+    margin: 70px 30px;
+    font-size: 1.13rem;
+    font-family: "Inter", serif;
+    color: rgba(54, 55, 55, 0.975);
+    letter-spacing: 5px;
+}
+.third_section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.images_sec{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.third_sliders{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.images_sec .third_active{
+    display: block;
+}
+.third_dot_con{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.third_dot{
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin:17px 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+}
+.third_dot:hover{
+    background-color: rgb(99, 110, 116);
+}
+.third_dot_con .third_activeDot{
+    background-color: rgb(82, 87, 91);
+}
+
+
+.fourth_section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.fourth_img_con{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.fourth_slides{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.fourth_img_con .fourth_active{
+    display: block;
+}
+.fourth_dot_con{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.fourth_dot{
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin:17px 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+}
+.fourth_dot :hover{
+    background-color: rgb(99, 110, 116);
+}
+.fourth_dot_con .fouth_activeDot{
+    background-color: rgb(82, 87, 91);
+}
+
+
+.fifth_img_con{
+    width: 92vw;
+    height: 2000px;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 12px;
+    row-gap: 35px;
+}
+.fifth_img_con img{
+    width: 200px;
+    height: 300px;
+}
+
+
+.sixth_section{
+    height: 3850px;
+    width: 100%;
+    background-color:rgba(229, 238, 246, 0.327);
+}
+.links ul li{
+    list-style: none;
+}
+.links a{
+    text-decoration: none;
+    color: grey;
+    font-family: "Inter", serif;
+    font-size: 0.79rem;
+}
+.links_heading{
+    font-family: "Inter", serif;
+    font-size: 0.75rem;
+}
+.link_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    padding-top: 40px;
+    gap: 60px;
+}
+.links{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 40px;
+}
+.links_heading{
+    margin: 15px 0;
+    letter-spacing: 0.04rem;
+}
+.links ul li{
+    padding: 4px;
+}
+.dwnld_Img{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.dwnld_img {
+    border-radius: 7px;
+    width: 140px;
+    height: 42px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 15px 0;
+}
+.social_img{
+    width: 30px;
+    height: 25px;
+    margin: 5px 2px;
+    border-radius: 20%;
+}
+.right_last{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+    letter-spacing: 0.04rem;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px 0;
+    line-height: 20px;
+    color: rgba(100, 98, 98, 0.907);
+    font-family: "Inter", serif;
+    font-size: 0.85rem;
+}
+.first img{
+    width: 50px;
+    height: 50px;
+}
+.bolding{
+    color: rgba(0, 0, 0, 0.866);
+}
+.popular{
+    width: 70%;
+    margin: auto;
+    margin-top: 0;
+}
+.para{
+    color: rgba(100, 98, 98, 0.907);
+    font-family: "Inter", serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.04rem;
+    margin: 30px 0;
+    line-height: 25px;
+}
+.popular_foot a{
+    text-decoration: none;
+    color:rgb(100, 102, 230) ;
+    font-weight: bold;
+    font-size:small;
+}
+.popular_foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    font-family: "Inter", serif;
+    color: rgba(100, 98, 98, 0.907);
+    font-size: 0.9rem;
+}
+.address{
+    color: rgba(100, 98, 98, 0.907);
+    font-family: "Inter", serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.04rem;
+}
+.office_address{
+    width: 70%;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    position: relative;
+}
+.left_last{
+    line-height: 20px;
+}
+.left_last h5{
+    font-size: 0.82rem;
+    padding: 10px 0;
+}
+.middle{
+    color: rgba(100, 98, 98, 0.907);
+    font-family: "Inter", serif;
+    font-size: 0.85rem;
+    align-items: flex-end; 
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+}
+.middle a{
+    text-decoration: none;
+    color:rgb(100, 102, 230) ;
+    font-weight: bold;
+    font-size:small;
+}
+
+
+.description{
+    width: 70%;
+    margin: auto;
+    padding-top: 60px ;
+    font-family: "Inter", serif;
+}
+.description h5{
+    padding: 10px 0;
+    font-family: "Inter", serif;
+    font-size: 0.82rem;
+    color: rgba(73, 73, 73, 0.941);
+}
+.description h6{
+    font-size: 0.82rem;
+    color: rgba(73, 73, 73, 0.941);
+}
+.description p{
+    color: rgba(100, 98, 98, 0.625);
+    font-family: "Inter", serif;
+    font-size: 0.8rem;
+}
+.first_desc{
+    padding: 20px 0 ;
+}
+.site {
+    padding: 15px 40px;
+}
+.bold{
+    font-size: 0.82rem;
+    color: rgba(73, 73, 73, 0.941);
+}
+.third_desc{
+    padding: 20px 0;
+}
+.insider_points {
+    padding: 15px 0;
+}
+.insider_points ul{
+    padding: 10px 35px;
+}
+.insider_points ul li{
+    padding: 8px 0;
+    color: rgba(100, 98, 98, 0.625);
+    font-family: "Inter", serif;
+    font-size: 0.8rem
+}
+.fourth_desc a{
+    text-decoration: none;
+    color: rgba(84, 83, 83, 0.877);
+}
+.fifth_points{
+    padding: 15px 40px;
+}
+.fifth_points h6{
+    padding: 15px 0;
+}
+.fifth_heading{
+    padding: 15px 0;
+}
+.myntra_app , .history, .shop{
+    padding: 20px 0;
+}
+.myntra_app h6{
+    padding: 10px 0;
+}
+.history h6{
+    padding: 10px 0;
+}
+.shop h6{
+    padding: 10px 0;
+}
